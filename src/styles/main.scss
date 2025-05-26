@@ -1,0 +1,17 @@
+@import './variables';
+@import "../components/SignInForm";
+@import './mixins.scss';
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #030014;
+  color: $primary-color;
+  height: 100%;
+}
