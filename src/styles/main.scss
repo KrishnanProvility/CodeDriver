@@ -1,7 +1,7 @@
 @import './variables';
-@import "../components/SignInForm";
 @import './mixins.scss';
 @import "~bootstrap/scss/bootstrap";
+@import "./SignInForm";
 
 * {
   margin: 0;
