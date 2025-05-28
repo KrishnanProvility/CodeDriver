@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import "./SignInForm.scss";
+import { Link } from 'react-router-dom';
+
 
 export default function SignInForm() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    
+
     return (
         <div className="d-flex align-items-center justify-content-center min-vh-100 bg-cover w-100">
         <div className="login-box card p-4 shadow-sm">
@@ -25,7 +26,7 @@ export default function SignInForm() {
                 </div>
                 <button type="submit" className="btn btn-login w-100">Sign On</button>
                 <div className="text-center mt-3 ">
-                    <a href="/login" className="text-dark text-decoration-none">Forgot password</a>
+                    <Link to="/forgot-password" className="text-dark text-decoration-none">Forgot Password</Link>
                     <p >Don't have an account? <a className="primary-color fw-bold  text-decoration-none" href="/login">Sign Up</a></p>
                 </div>
             </form>
