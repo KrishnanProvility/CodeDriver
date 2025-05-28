@@ -4,16 +4,17 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons';
 import {toast} from "react-toastify";
 
+const EMAIL_REGAX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 function ForgotPassword() {
     const [email, setEmail] = useState('');
-    const [btnDis, setBtnDis] = useState(true);
+    const [btnDisable, setBtnDisable] = useState(true);
     const navigate = useNavigate();
 
-
     useEffect(() => {
-        if (!email.length) return setBtnDis(true);
-        setBtnDis(false);
-    }, [email.length]);
+        if (!EMAIL_REGAX.test(email)) return setBtnDisable(true);
+        setBtnDisable(false);
+    }, [email]);
 
 
     function passwordInput(e) {
@@ -24,8 +25,7 @@ function ForgotPassword() {
     function forgotPassClick(e) {
         e.preventDefault();  // Prevent form submission and page reload
         setEmail('');
-        toast.success('Forgot your password', {
-            autoClose: 2000, // 2sec
+        toast.success('Success', {
             onClose: () => {
                 navigate('/login');
             }
@@ -49,7 +49,7 @@ function ForgotPassword() {
                         <input type="email" className="form-control" id="email" placeholder="Enter email" value={email}
                                onChange={passwordInput}/>
                     </div>
-                    <button type="submit" className="btn btn-login forgot-password-btn w-100" disabled={btnDis}
+                    <button type="submit" className="btn btn-login forgot-password-btn w-100" disabled={btnDisable}
                             onClick={forgotPassClick}>Send
                         Verify Code
                     </button>

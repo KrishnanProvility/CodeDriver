@@ -1,12 +1,11 @@
 import "./styles/main.scss";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import SignInForm from "./components/login/SignInForm";
-import ForgotPassword from "./components/login/forgotPassword";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
+import SignInForm from "./components/login/SignInForm";
+import ForgotPassword from "./components/login/forgotPassword";
 
 function App() {
     return (
@@ -20,7 +19,7 @@ function App() {
                 pauseOnFocusLoss
                 draggable
                 pauseOnHover
-                theme='colored'
+                autoClose={2000} // 2sec
             />
             <Router>
                 <Routes>
