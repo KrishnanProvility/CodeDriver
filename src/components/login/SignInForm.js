@@ -27,7 +27,8 @@ export default function SignInForm() {
                 <button type="submit" className="btn btn-login w-100">Sign On</button>
                 <div className="text-center mt-3 ">
                     <Link to="/forgot-password" className="text-dark text-decoration-none">Forgot Password</Link>
-                    <p >Don't have an account? <a className="primary-color fw-bold  text-decoration-none" href="/login">Sign Up</a></p>
+                    <p >Don't have an account? <Link to="/sign-up" className="primary-color fw-bold  text-decoration-none">Sign Up</Link></p>
+
                 </div>
             </form>
         </div>
