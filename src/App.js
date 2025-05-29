@@ -22,7 +22,7 @@ function App() {
                 pauseOnHover
                 autoClose={2000} // 2sec
             />
-            <Router>
+            <Router basename="/CodeDriver">
                 <Routes>
                     <Route path="/" element={<SignInForm />} />
                     <Route path="/login" element={<SignInForm />} />
