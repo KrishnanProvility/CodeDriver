@@ -8,7 +8,7 @@ export default function SignInForm() {
 
     return (
         <div className="d-flex align-items-center justify-content-center min-vh-100 bg-cover w-100">
-        <div className="login-box card p-4 shadow-sm">
+        <div className="login-box card p-4 shadow-lg">
                 <div className="brand-logo mb-3"></div>
                 <h2 className="text-center fw-bolder mb-4">Sign On</h2>
             <form>

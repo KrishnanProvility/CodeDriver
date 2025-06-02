@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import SignInForm from "./components/login/SignInForm";
 import ForgotPassword from "./components/login/forgotPassword";
 import SignUP from "./components/login/sign-up";
+import VerifySignUp from "./components/login/VerifySignUp";
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
                     <Route path="/login" element={<SignInForm />} />
                     <Route path="/forgot-password" element={<ForgotPassword />} />
                     <Route path="/sign-up" element={<SignUP/>}/>
+                    <Route path="/verification-sign-up" element={<VerifySignUp/>}/>
                 </Routes>
             </Router>
         </>
