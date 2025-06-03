@@ -24,10 +24,10 @@ function ForgotPassword() {
 
     function forgotPassClick(e) {
         e.preventDefault();  // Prevent form submission and page reload
-        setEmail('');
         toast.success('Success', {
             onClose: () => {
-                navigate('/login');
+                setEmail('');
+                navigate('/forgot-password-verify');
             }
         });
     }
