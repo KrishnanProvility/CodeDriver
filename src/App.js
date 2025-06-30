@@ -8,6 +8,8 @@ import SignInForm from "./components/login/SignInForm";
 import ForgotPassword from "./components/login/forgotPassword";
 import SignUP from "./components/login/sign-up";
 import VerifySignUp from "./components/login/VerifySignUp";
+import ForgotPasswordVerify from "./components/login/forgot-password-verify";
+
 
 function App() {
     return (
@@ -30,6 +32,7 @@ function App() {
                     <Route path="/forgot-password" element={<ForgotPassword />} />
                     <Route path="/sign-up" element={<SignUP/>}/>
                     <Route path="/verification-sign-up" element={<VerifySignUp/>}/>
+                    <Route path="/forgot-password-verify" element={<ForgotPasswordVerify />} />
                 </Routes>
             </Router>
         </>
