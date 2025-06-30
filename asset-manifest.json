@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/CodeDriver/static/css/main.6fe14edd.css",
-    "main.js": "/CodeDriver/static/js/main.55e25c7d.js",
+    "main.css": "/CodeDriver/static/css/main.c45e00bc.css",
+    "main.js": "/CodeDriver/static/js/main.601111d8.js",
     "static/js/453.04df25b5.chunk.js": "/CodeDriver/static/js/453.04df25b5.chunk.js",
     "static/media/new-web-login.png": "/CodeDriver/static/media/new-web-login.3ae6e87857e491ede2fd.png",
     "static/media/taxiBookAI.svg": "/CodeDriver/static/media/taxiBookAI.ccc8689934f3f2224aab.svg",
     "index.html": "/CodeDriver/index.html",
-    "main.6fe14edd.css.map": "/CodeDriver/static/css/main.6fe14edd.css.map",
-    "main.55e25c7d.js.map": "/CodeDriver/static/js/main.55e25c7d.js.map",
+    "main.c45e00bc.css.map": "/CodeDriver/static/css/main.c45e00bc.css.map",
+    "main.601111d8.js.map": "/CodeDriver/static/js/main.601111d8.js.map",
     "453.04df25b5.chunk.js.map": "/CodeDriver/static/js/453.04df25b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fe14edd.css",
-    "static/js/main.55e25c7d.js"
+    "static/css/main.c45e00bc.css",
+    "static/js/main.601111d8.js"
   ]
 }
