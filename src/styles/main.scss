@@ -1,0 +1,17 @@
+@use './variables' as vars;
+@use './mixins';
+@use 'bootstrap/scss/bootstrap';
+@use './SignInForm';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #030014;
+  color: vars.$primary-color;
+  height: 100%;
+}
